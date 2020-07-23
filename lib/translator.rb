@@ -28,12 +28,12 @@ end
 
 
 def get_english_meaning(file,emote)
-
-lib_hash.each do |k, v|
-if emote == v[:japanese]
+library = load_library(file)
+  library.each do |k, v|
+  if emote == v[:japanese]
   emote = k
 else
-#  print "Sorry, that emoticon was not found"
+"Sorry, that emoticon was not found"
 end
 end
 emote
