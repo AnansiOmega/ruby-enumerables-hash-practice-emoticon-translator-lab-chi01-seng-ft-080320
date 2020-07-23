@@ -30,13 +30,11 @@ end
 def get_english_meaning(file,emote)
 library = load_library(file)
   library.each do |k, v|
-  if emote == v[:japanese]
-  emote = k
-else
-"Sorry, that emoticon was not found"
-end
-end
-emote
+    if emote == v[:japanese]
+    return emote = k
+    end
+  end
+  "Sorry, that emoticon was not found"
 end
 
 
