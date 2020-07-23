@@ -24,7 +24,6 @@ library = load_library(file)
       end
       end
   print "Sorry, that emoticon was not found"
-emote
 end
 
 def get_english_meaning(load_library,emote)
