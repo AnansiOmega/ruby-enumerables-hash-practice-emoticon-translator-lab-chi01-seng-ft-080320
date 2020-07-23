@@ -27,7 +27,7 @@ library = load_library(file)
 end
 
 
-def get_english_meaning(load_library,emote)
+def get_english_meaning(,emote)
   library = YAML.load_file('lib/emoticons.yml')
   lib_hash = {}
   library.each do |key,value|
