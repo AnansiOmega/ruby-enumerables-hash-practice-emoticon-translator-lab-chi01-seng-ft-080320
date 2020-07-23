@@ -27,16 +27,8 @@ library = load_library(file)
 end
 
 
-def get_english_meaning(,emote)
-  library = YAML.load_file('lib/emoticons.yml')
-  lib_hash = {}
-  library.each do |key,value|
-    hash = {}
-    hash[:english] = value[0]
-    hash[:japanese] = value[1]  
-    lib_hash[key] = hash
-  end
-  lib_hash
+def get_english_meaning(file,emote)
+
 lib_hash.each do |k, v|
 if emote == v[:japanese]
   emote = k
