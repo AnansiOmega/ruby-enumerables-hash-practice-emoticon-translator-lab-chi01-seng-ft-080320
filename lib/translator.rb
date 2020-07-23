@@ -20,7 +20,7 @@ def get_japanese_emoticon(file,emote)
 library = load_library(file)
   library.each do |k, v|
     if emote == v[:english]
-    emote = v[:japanese]
+    return v[:japanese]
       end
       end
   print "Sorry, that emoticon was not found"
