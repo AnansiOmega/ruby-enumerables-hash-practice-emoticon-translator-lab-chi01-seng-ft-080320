@@ -19,12 +19,14 @@ end
 def get_japanese_emoticon(file,emote)
 library = load_library(file)
   library.each do |k, v|
+    binding.pry
     if emote == v[:english]
     return v[:japanese]
       end
       end
   puts "Sorry, that emoticon was not found"
 end
+
 
 def get_english_meaning(load_library,emote)
   library = YAML.load_file('lib/emoticons.yml')
