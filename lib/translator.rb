@@ -23,7 +23,7 @@ library = load_library(file)
     return v[:japanese]
       end
       end
-  puts "Sorry, that emoticon was not found"
+  "Sorry, that emoticon was not found"
 end
 
 
