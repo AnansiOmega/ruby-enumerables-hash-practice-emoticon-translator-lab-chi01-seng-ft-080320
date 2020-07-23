@@ -23,7 +23,7 @@ library = load_library(file)
     return v[:japanese]
       end
       end
-  print "Sorry, that emoticon was not found"
+  puts "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(load_library,emote)
